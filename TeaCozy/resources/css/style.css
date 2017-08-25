@@ -1,0 +1,179 @@
+html {
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+}
+
+h2, h4 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+address {
+    font-style: normal;
+}
+
+
+/* Flexbox */
+
+.container {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.wrap {
+    flex-flow: wrap;
+}
+
+
+/* Header */
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+    font-weight: bold;
+    border-bottom: solid 1px;
+    padding: 0 10px;
+    height: 70px;
+}
+
+.logo {
+    flex: 0 0 157px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+header nav {
+    flex: 0 1 400px;
+    justify-content: flex-end;
+}
+
+header nav a {
+    font-size: 22px;
+    margin-left: 15px;
+}
+
+
+/* Main */
+
+main {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-top: 70px;
+    padding-top: 70px;
+}
+
+.cover {
+    background-size: cover;
+}
+
+/* Mission */
+
+.mission {
+    height: 770px;
+    background-image: URL("../images/img-mission-background.jpg");
+    padding-top: 0;
+}
+
+
+/* Featured Tea */
+
+.featured {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.featured img {
+    height: 200px;
+    width: 300px;
+    margin: 10px 10px 0 10px;
+}
+
+figcaption {
+    margin: 10px;
+    font-weight: bold;
+}
+
+figure {
+    margin: 0;
+}
+
+
+/* Locations */
+
+.locations {
+    height: 570px;
+    background-image: URL("../images/img-locations-background.jpg");
+}
+
+.locations h2 {
+    margin-bottom: 15px;
+}
+
+.locations p {
+    padding: 15px 0;
+}
+
+.locations address {
+    width: 300px;
+    opacity: 1;
+    margin: 0 20px;
+}
+
+.transparent {
+    background-color: transparent;
+}
+
+/* Contact */
+
+.contact {
+    height: 200px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
+/* Footer */
+
+footer p {
+    text-align: left;
+    padding-left: 20px;
+}
